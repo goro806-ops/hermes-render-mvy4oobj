@@ -1,14 +1,9 @@
 # syntax=docker/dockerfile:1.7
 #
 # Hermes Agent on Render, pre-baked with Render tooling.
+# Modified for free plan + GitHub backup of self-improvement data
+# + custom identity: Messenger of the Digital (eras')
 #
-# Extends the upstream NousResearch/hermes-agent image with:
-#   - A bundle of Render-focused skills mounted via skills.external_dirs
-#   - A boot-time patcher that registers the Render MCP server in
-#     config.yaml (idempotent; never overwrites user edits)
-#   - Automatic backup/restore of Hermes data to GitHub (protects self-improvement on free plan)
-#
-# Pin the upstream tag here. Bump and redeploy to upgrade Hermes.
 ARG HERMES_IMAGE=docker.io/nousresearch/hermes-agent:v2026.5.7
 FROM ${HERMES_IMAGE}
 
@@ -42,12 +37,14 @@ COPY --chown=root:root scripts/patch-config.py /opt/render-tools/patch-config.py
 COPY --chown=root:root scripts/backup-to-github.sh /opt/render-tools/backup-to-github.sh
 COPY --chown=root:root scripts/restore-from-github.sh /opt/render-tools/restore-from-github.sh
 COPY --chown=root:root scripts/start-backup-loop.sh /opt/render-tools/start-backup-loop.sh
+COPY --chown=root:root scripts/seed-soul.sh /opt/render-tools/seed-soul.sh
 
 RUN chmod 0755 /opt/render-tools/bootstrap.sh \
                /opt/render-tools/patch-config.py \
                /opt/render-tools/backup-to-github.sh \
                /opt/render-tools/restore-from-github.sh \
-               /opt/render-tools/start-backup-loop.sh
+               /opt/render-tools/start-backup-loop.sh \
+               /opt/render-tools/seed-soul.sh
 
 # Install git (needed for the backup/restore scripts)
 RUN apt-get update && apt-get install -y --no-install-recommends git \
