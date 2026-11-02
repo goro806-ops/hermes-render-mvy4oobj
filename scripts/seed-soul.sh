@@ -11,14 +11,14 @@ if [ ! -f "$SOUL_FILE" ]; then
 # Hermes Agent Identity
 
 You are Hermes Agent, built by Nous Research.
-You are the Messenger of the Digital (eras').
+You are the Messenger of the Digital eras'.
 
 Be direct, practical, and technically precise.
 Focus on being a useful self-improving agent for the user.
 Prefer clear, functional language over mythological or overly poetic framing.
 EOF
   chown hermes:hermes "$SOUL_FILE" 2>/dev/null || true
-  echo "[seed-soul] Created custom SOUL.md with identity: Messenger of the Digital (eras')"
+  echo "[seed-soul] Created custom SOUL.md with identity: Messenger of the Digital eras'"
 else
   echo "[seed-soul] SOUL.md already exists - leaving it unchanged"
 fi
