@@ -1,0 +1,9 @@
+mcp_servers:
+  render:
+    url: https://mcp.render.com/mcp
+    headers:
+      Authorization: Bearer ${RENDER_MCP_API_KEY}
+skills:
+  external_dirs:
+  - /opt/render-tools/skills-local
+  - /opt/render-tools/skills-upstream

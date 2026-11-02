@@ -1,0 +1,81 @@
+
+=== SIGTERM received · 2026-11-02 22:12:53 ===
+main-thread stack at signal delivery:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/opt/hermes/tui_gateway/entry.py", line 235, in <module>
+    main()
+  File "/opt/hermes/tui_gateway/entry.py", line 211, in main
+    for raw in sys.stdin:
+
+--- thread MainThread (id=124948087003008) ---
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/opt/hermes/tui_gateway/entry.py", line 235, in <module>
+    main()
+  File "/opt/hermes/tui_gateway/entry.py", line 211, in main
+    for raw in sys.stdin:
+  File "/opt/hermes/tui_gateway/entry.py", line 103, in _log_signal
+    f.write("".join(traceback.format_stack(sys._current_frames().get(tid))))
+
+--- thread Thread-2 (recv_events) (id=124948056860352) ---
+  File "/usr/lib/python3.13/threading.py", line 1014, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.13/threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/hermes/.venv/lib/python3.13/site-packages/websockets/sync/client.py", line 123, in recv_events
+    super().recv_events()
+  File "/opt/hermes/.venv/lib/python3.13/site-packages/websockets/sync/connection.py", line 814, in recv_events
+    data = self.socket.recv(self.recv_bufsize)
+
+--- thread Thread-3 (keepalive) (id=124948048467648) ---
+  File "/usr/lib/python3.13/threading.py", line 1014, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.13/threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/hermes/.venv/lib/python3.13/site-packages/websockets/sync/connection.py", line 758, in keepalive
+    self.recv_events_thread.join(self.ping_interval - self.latency)
+  File "/usr/lib/python3.13/threading.py", line 1094, in join
+    self._handle.join(timeout)
+
+--- thread hermes-ws-pub (id=124948040074944) ---
+  File "/usr/lib/python3.13/threading.py", line 1014, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.13/threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/hermes/tui_gateway/event_publisher.py", line 74, in _drain
+    item = self._q.get()
+  File "/usr/lib/python3.13/queue.py", line 202, in get
+    self.not_empty.wait()
+  File "/usr/lib/python3.13/threading.py", line 359, in wait
+    waiter.acquire()
+
+--- thread mcp-event-loop (id=124948006381248) ---
+  File "/usr/lib/python3.13/threading.py", line 1014, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.13/threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 683, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 2004, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/usr/lib/python3.13/selectors.py", line 452, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+
+--- thread asyncio_0 (id=124947992745664) ---
+  File "/usr/lib/python3.13/threading.py", line 1014, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.13/threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 90, in _worker
+    work_item = work_queue.get(block=True)
