@@ -140,3 +140,6 @@ sqlite3.OperationalError: database is locked
 2026-11-03 05:51:48,116 WARNING hermes_cli.web_server: Binding to 0.0.0.0 with --insecure — the dashboard has no robust authentication. Only use on trusted networks.
 2026-11-03 05:52:00,825 WARNING gateway.run: No user allowlists configured. All unauthorized users will be denied. Set GATEWAY_ALLOW_ALL_USERS=true in ~/.hermes/.env to allow open access, or configure platform allowlists (e.g., TELEGRAM_ALLOWED_USERS=your_id).
 2026-11-03 05:52:00,827 WARNING gateway.run: No messaging platforms enabled.
+2026-11-03 06:06:08,633 WARNING hermes_cli.web_server: Binding to 0.0.0.0 with --insecure — the dashboard has no robust authentication. Only use on trusted networks.
+2026-11-03 06:06:23,265 WARNING gateway.run: No user allowlists configured. All unauthorized users will be denied. Set GATEWAY_ALLOW_ALL_USERS=true in ~/.hermes/.env to allow open access, or configure platform allowlists (e.g., TELEGRAM_ALLOWED_USERS=your_id).
+2026-11-03 06:06:23,267 WARNING gateway.run: No messaging platforms enabled.
