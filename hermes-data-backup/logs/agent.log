@@ -2363,3 +2363,31 @@ sqlite3.OperationalError: database is locked
 2026-11-03 18:28:00,827 INFO tools.tirith_security: tirith installed to /opt/data/bin/tirith (SHA-256 only)
 2026-11-03 18:29:14,359 INFO mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
 2026-11-03 18:34:15,591 INFO mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+2026-11-03 18:42:06,618 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-11-03 18:42:06,627 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-11-03 18:42:06,726 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-11-03 18:42:19,314 INFO hermes_cli.web_server: Mounted plugin API routes: /api/plugins/example/
+2026-11-03 18:42:19,614 INFO hermes_cli.web_server: Mounted plugin API routes: /api/plugins/hermes-achievements/
+2026-11-03 18:42:20,720 INFO hermes_cli.web_server: Mounted plugin API routes: /api/plugins/kanban/
+2026-11-03 18:42:20,722 WARNING hermes_cli.web_server: Binding to 0.0.0.0 with --insecure — the dashboard has no robust authentication. Only use on trusted networks.
+2026-11-03 18:42:23,623 INFO hermes_cli.plugins: Plugin discovery complete: 10 found, 7 enabled
+2026-11-03 18:42:31,440 INFO mcp.client.streamable_http: Received session ID: mcp-session-340c362e-3141-4706-8dc3-97253ab8a50b
+2026-11-03 18:42:31,441 INFO mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+2026-11-03 18:42:31,896 INFO tools.mcp_tool: MCP server 'render' (HTTP): registered 23 tool(s): mcp_render_create_cron_job, mcp_render_create_key_value, mcp_render_create_postgres, mcp_render_create_static_site, mcp_render_create_web_service, mcp_render_get_deploy, mcp_render_get_key_value, mcp_render_get_metrics, mcp_render_get_postgres, mcp_render_get_selected_workspace, mcp_render_get_service, mcp_render_list_deploys, mcp_render_list_events, mcp_render_list_key_value, mcp_render_list_log_label_values, mcp_render_list_logs, mcp_render_list_postgres_instances, mcp_render_list_services, mcp_render_list_workspaces, mcp_render_query_render_postgres, mcp_render_select_workspace, mcp_render_trigger_deploy, mcp_render_update_environment_variables
+2026-11-03 18:42:31,896 INFO tools.mcp_tool: MCP: registered 23 tool(s) from 1 server(s)
+2026-11-03 18:42:31,897 INFO tools.mcp_tool:   MCP: 23 tool(s) from 1 server(s)
+2026-11-03 18:42:35,518 INFO tools.tirith_security: tirith not found — downloading latest release for x86_64-unknown-linux-gnu...
+2026-11-03 18:42:35,849 INFO gateway.run: Starting Hermes Gateway...
+2026-11-03 18:42:35,849 INFO gateway.run: Session storage: /opt/data/sessions
+2026-11-03 18:42:35,852 INFO gateway.run: Agent budget: max_iterations=90 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 90)
+2026-11-03 18:42:35,852 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-11-03 18:42:36,048 WARNING gateway.run: No user allowlists configured. All unauthorized users will be denied. Set GATEWAY_ALLOW_ALL_USERS=true in ~/.hermes/.env to allow open access, or configure platform allowlists (e.g., TELEGRAM_ALLOWED_USERS=your_id).
+2026-11-03 18:42:36,059 WARNING gateway.run: No messaging platforms enabled.
+2026-11-03 18:42:36,059 INFO gateway.run: Gateway will continue running for cron job execution.
+2026-11-03 18:42:36,150 INFO gateway.run: Channel directory built: 0 target(s)
+2026-11-03 18:42:36,150 INFO gateway.run: Press Ctrl+C to stop
+2026-11-03 18:42:36,919 INFO gateway.run: Cron ticker started (interval=60s)
+2026-11-03 18:42:37,257 INFO tools.tirith_security: cosign not on PATH — installing tirith with SHA-256 verification only (install cosign for full supply chain verification)
+2026-11-03 18:42:41,167 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-11-03 18:42:41,781 INFO tools.tirith_security: tirith installed to /opt/data/bin/tirith (SHA-256 only)
+2026-11-03 18:47:31,854 INFO mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
