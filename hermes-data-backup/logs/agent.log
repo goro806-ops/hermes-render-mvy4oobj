@@ -3107,3 +3107,31 @@ sqlite3.OperationalError: database is locked
 2026-11-04 00:50:56,902 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
 2026-11-04 00:50:57,123 INFO tools.tirith_security: tirith installed to /opt/data/bin/tirith (SHA-256 only)
 2026-11-04 00:55:48,130 INFO mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+2026-11-04 01:02:51,788 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-11-04 01:02:51,801 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-11-04 01:02:51,986 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-11-04 01:03:02,991 INFO hermes_cli.web_server: Mounted plugin API routes: /api/plugins/example/
+2026-11-04 01:03:03,191 INFO hermes_cli.web_server: Mounted plugin API routes: /api/plugins/hermes-achievements/
+2026-11-04 01:03:04,197 INFO hermes_cli.web_server: Mounted plugin API routes: /api/plugins/kanban/
+2026-11-04 01:03:04,297 WARNING hermes_cli.web_server: Binding to 0.0.0.0 with --insecure — the dashboard has no robust authentication. Only use on trusted networks.
+2026-11-04 01:03:07,998 INFO hermes_cli.plugins: Plugin discovery complete: 10 found, 7 enabled
+2026-11-04 01:03:15,215 INFO mcp.client.streamable_http: Received session ID: mcp-session-5a77c244-7914-4f74-8c1e-44feb6137c32
+2026-11-04 01:03:15,222 INFO mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+2026-11-04 01:03:15,600 INFO tools.mcp_tool: MCP server 'render' (HTTP): registered 23 tool(s): mcp_render_create_cron_job, mcp_render_create_key_value, mcp_render_create_postgres, mcp_render_create_static_site, mcp_render_create_web_service, mcp_render_get_deploy, mcp_render_get_key_value, mcp_render_get_metrics, mcp_render_get_postgres, mcp_render_get_selected_workspace, mcp_render_get_service, mcp_render_list_deploys, mcp_render_list_events, mcp_render_list_key_value, mcp_render_list_log_label_values, mcp_render_list_logs, mcp_render_list_postgres_instances, mcp_render_list_services, mcp_render_list_workspaces, mcp_render_query_render_postgres, mcp_render_select_workspace, mcp_render_trigger_deploy, mcp_render_update_environment_variables
+2026-11-04 01:03:15,604 INFO tools.mcp_tool: MCP: registered 23 tool(s) from 1 server(s)
+2026-11-04 01:03:15,604 INFO tools.mcp_tool:   MCP: 23 tool(s) from 1 server(s)
+2026-11-04 01:03:19,110 INFO tools.tirith_security: tirith not found — downloading latest release for x86_64-unknown-linux-gnu...
+2026-11-04 01:03:19,401 INFO gateway.run: Starting Hermes Gateway...
+2026-11-04 01:03:19,402 INFO gateway.run: Session storage: /opt/data/sessions
+2026-11-04 01:03:19,402 INFO gateway.run: Agent budget: max_iterations=90 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 90)
+2026-11-04 01:03:19,403 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-11-04 01:03:19,590 WARNING gateway.run: No user allowlists configured. All unauthorized users will be denied. Set GATEWAY_ALLOW_ALL_USERS=true in ~/.hermes/.env to allow open access, or configure platform allowlists (e.g., TELEGRAM_ALLOWED_USERS=your_id).
+2026-11-04 01:03:19,592 WARNING gateway.run: No messaging platforms enabled.
+2026-11-04 01:03:19,592 INFO gateway.run: Gateway will continue running for cron job execution.
+2026-11-04 01:03:19,607 INFO gateway.run: Channel directory built: 0 target(s)
+2026-11-04 01:03:19,607 INFO gateway.run: Press Ctrl+C to stop
+2026-11-04 01:03:20,298 INFO gateway.run: Cron ticker started (interval=60s)
+2026-11-04 01:03:20,878 INFO tools.tirith_security: cosign not on PATH — installing tirith with SHA-256 verification only (install cosign for full supply chain verification)
+2026-11-04 01:03:24,385 INFO tools.tirith_security: tirith installed to /opt/data/bin/tirith (SHA-256 only)
+2026-11-04 01:03:24,686 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-11-04 01:08:15,715 INFO mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
