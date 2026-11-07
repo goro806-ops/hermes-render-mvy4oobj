@@ -599,3 +599,6 @@ Traceback (most recent call last):
     conn.execute("PRAGMA journal_mode=WAL")
     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
 sqlite3.OperationalError: database is locked
+2026-11-07 04:11:54,458 WARNING hermes_cli.web_server: Binding to 0.0.0.0 with --insecure — the dashboard has no robust authentication. Only use on trusted networks.
+2026-11-07 04:12:08,550 WARNING gateway.run: No user allowlists configured. All unauthorized users will be denied. Set GATEWAY_ALLOW_ALL_USERS=true in ~/.hermes/.env to allow open access, or configure platform allowlists (e.g., TELEGRAM_ALLOWED_USERS=your_id).
+2026-11-07 04:12:08,553 WARNING gateway.run: No messaging platforms enabled.
