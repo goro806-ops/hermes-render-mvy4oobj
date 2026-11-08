@@ -8125,3 +8125,29 @@ sqlite3.OperationalError: database is locked
 2026-11-08 09:12:12,022 INFO gateway.run: Cron ticker started (interval=60s)
 2026-11-08 09:12:16,618 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
 2026-11-08 09:17:07,747 INFO mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+2026-11-08 09:26:13,600 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-11-08 09:26:13,603 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-11-08 09:26:13,700 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-11-08 09:26:26,401 INFO hermes_cli.web_server: Mounted plugin API routes: /api/plugins/example/
+2026-11-08 09:26:26,602 INFO hermes_cli.web_server: Mounted plugin API routes: /api/plugins/hermes-achievements/
+2026-11-08 09:26:27,509 INFO hermes_cli.web_server: Mounted plugin API routes: /api/plugins/kanban/
+2026-11-08 09:26:27,601 WARNING hermes_cli.web_server: Binding to 0.0.0.0 with --insecure — the dashboard has no robust authentication. Only use on trusted networks.
+2026-11-08 09:26:29,601 INFO hermes_cli.plugins: Plugin discovery complete: 10 found, 7 enabled
+2026-11-08 09:26:37,366 INFO mcp.client.streamable_http: Received session ID: mcp-session-a9744463-aee8-4f35-91b6-f8ca33e9c75b
+2026-11-08 09:26:37,367 INFO mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+2026-11-08 09:26:37,892 INFO tools.mcp_tool: MCP server 'render' (HTTP): registered 28 tool(s): mcp_render_approve_blueprint, mcp_render_create_blueprint, mcp_render_create_cron_job, mcp_render_create_key_value, mcp_render_create_postgres, mcp_render_create_static_site, mcp_render_create_web_service, mcp_render_get_blueprint, mcp_render_get_deploy, mcp_render_get_key_value, mcp_render_get_metrics, mcp_render_get_postgres, mcp_render_get_selected_workspace, mcp_render_get_service, mcp_render_list_deploys, mcp_render_list_events, mcp_render_list_key_value, mcp_render_list_log_label_values, mcp_render_list_logs, mcp_render_list_postgres_instances, mcp_render_list_services, mcp_render_list_workspaces, mcp_render_plan_blueprint, mcp_render_query_render_postgres, mcp_render_select_workspace, mcp_render_trigger_deploy, mcp_render_update_blueprint, mcp_render_update_environment_variables
+2026-11-08 09:26:37,893 INFO tools.mcp_tool: MCP: registered 28 tool(s) from 1 server(s)
+2026-11-08 09:26:37,893 INFO tools.mcp_tool:   MCP: 28 tool(s) from 1 server(s)
+2026-11-08 09:26:40,920 INFO tools.tirith_security: tirith not found — downloading latest release for x86_64-unknown-linux-gnu...
+2026-11-08 09:26:41,203 INFO gateway.run: Starting Hermes Gateway...
+2026-11-08 09:26:41,203 INFO gateway.run: Session storage: /opt/data/sessions
+2026-11-08 09:26:41,204 INFO gateway.run: Agent budget: max_iterations=90 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 90)
+2026-11-08 09:26:41,204 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-11-08 09:26:41,308 WARNING gateway.run: No user allowlists configured. All unauthorized users will be denied. Set GATEWAY_ALLOW_ALL_USERS=true in ~/.hermes/.env to allow open access, or configure platform allowlists (e.g., TELEGRAM_ALLOWED_USERS=your_id).
+2026-11-08 09:26:41,309 WARNING gateway.run: No messaging platforms enabled.
+2026-11-08 09:26:41,309 INFO gateway.run: Gateway will continue running for cron job execution.
+2026-11-08 09:26:41,405 INFO gateway.run: Channel directory built: 0 target(s)
+2026-11-08 09:26:41,406 INFO gateway.run: Press Ctrl+C to stop
+2026-11-08 09:26:42,000 INFO gateway.run: Cron ticker started (interval=60s)
+2026-11-08 09:26:46,411 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-11-08 09:31:37,661 INFO mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
