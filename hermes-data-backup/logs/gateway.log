@@ -3792,3 +3792,14 @@ sqlite3.OperationalError: database is locked
 2026-11-08 21:47:25,226 INFO gateway.run: Press Ctrl+C to stop
 2026-11-08 21:47:25,731 INFO gateway.run: Cron ticker started (interval=60s)
 2026-11-08 21:47:30,234 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-11-08 22:01:45,103 INFO gateway.run: Starting Hermes Gateway...
+2026-11-08 22:01:45,104 INFO gateway.run: Session storage: /opt/data/sessions
+2026-11-08 22:01:45,104 INFO gateway.run: Agent budget: max_iterations=90 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 90)
+2026-11-08 22:01:45,105 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-11-08 22:01:45,206 WARNING gateway.run: No user allowlists configured. All unauthorized users will be denied. Set GATEWAY_ALLOW_ALL_USERS=true in ~/.hermes/.env to allow open access, or configure platform allowlists (e.g., TELEGRAM_ALLOWED_USERS=your_id).
+2026-11-08 22:01:45,208 WARNING gateway.run: No messaging platforms enabled.
+2026-11-08 22:01:45,208 INFO gateway.run: Gateway will continue running for cron job execution.
+2026-11-08 22:01:45,219 INFO gateway.run: Channel directory built: 0 target(s)
+2026-11-08 22:01:45,220 INFO gateway.run: Press Ctrl+C to stop
+2026-11-08 22:01:45,814 INFO gateway.run: Cron ticker started (interval=60s)
+2026-11-08 22:01:50,227 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
