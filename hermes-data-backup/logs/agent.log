@@ -10055,3 +10055,31 @@ sqlite3.OperationalError: database is locked
 2026-11-09 02:36:55,802 INFO tools.tirith_security: tirith installed to /opt/data/bin/tirith (SHA-256 only)
 2026-11-09 02:36:56,707 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
 2026-11-09 02:41:47,592 INFO mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+2026-11-09 02:55:53,352 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-11-09 02:55:53,360 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-11-09 02:55:53,544 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-11-09 02:56:05,451 INFO hermes_cli.web_server: Mounted plugin API routes: /api/plugins/example/
+2026-11-09 02:56:05,844 INFO hermes_cli.web_server: Mounted plugin API routes: /api/plugins/hermes-achievements/
+2026-11-09 02:56:06,748 INFO hermes_cli.web_server: Mounted plugin API routes: /api/plugins/kanban/
+2026-11-09 02:56:06,750 WARNING hermes_cli.web_server: Binding to 0.0.0.0 with --insecure — the dashboard has no robust authentication. Only use on trusted networks.
+2026-11-09 02:56:09,055 INFO hermes_cli.plugins: Plugin discovery complete: 10 found, 7 enabled
+2026-11-09 02:56:16,235 INFO mcp.client.streamable_http: Received session ID: mcp-session-9b9bdea2-3b5e-459e-937f-97a878668acb
+2026-11-09 02:56:16,236 INFO mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+2026-11-09 02:56:16,592 INFO tools.mcp_tool: MCP server 'render' (HTTP): registered 28 tool(s): mcp_render_approve_blueprint, mcp_render_create_blueprint, mcp_render_create_cron_job, mcp_render_create_key_value, mcp_render_create_postgres, mcp_render_create_static_site, mcp_render_create_web_service, mcp_render_get_blueprint, mcp_render_get_deploy, mcp_render_get_key_value, mcp_render_get_metrics, mcp_render_get_postgres, mcp_render_get_selected_workspace, mcp_render_get_service, mcp_render_list_deploys, mcp_render_list_events, mcp_render_list_key_value, mcp_render_list_log_label_values, mcp_render_list_logs, mcp_render_list_postgres_instances, mcp_render_list_services, mcp_render_list_workspaces, mcp_render_plan_blueprint, mcp_render_query_render_postgres, mcp_render_select_workspace, mcp_render_trigger_deploy, mcp_render_update_blueprint, mcp_render_update_environment_variables
+2026-11-09 02:56:16,592 INFO tools.mcp_tool: MCP: registered 28 tool(s) from 1 server(s)
+2026-11-09 02:56:16,593 INFO tools.mcp_tool:   MCP: 28 tool(s) from 1 server(s)
+2026-11-09 02:56:20,061 INFO tools.tirith_security: tirith not found — downloading latest release for x86_64-unknown-linux-gnu...
+2026-11-09 02:56:20,446 INFO gateway.run: Starting Hermes Gateway...
+2026-11-09 02:56:20,446 INFO gateway.run: Session storage: /opt/data/sessions
+2026-11-09 02:56:20,446 INFO gateway.run: Agent budget: max_iterations=90 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 90)
+2026-11-09 02:56:20,447 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-11-09 02:56:20,554 WARNING gateway.run: No user allowlists configured. All unauthorized users will be denied. Set GATEWAY_ALLOW_ALL_USERS=true in ~/.hermes/.env to allow open access, or configure platform allowlists (e.g., TELEGRAM_ALLOWED_USERS=your_id).
+2026-11-09 02:56:20,556 WARNING gateway.run: No messaging platforms enabled.
+2026-11-09 02:56:20,557 INFO gateway.run: Gateway will continue running for cron job execution.
+2026-11-09 02:56:20,572 INFO gateway.run: Channel directory built: 0 target(s)
+2026-11-09 02:56:20,573 INFO gateway.run: Press Ctrl+C to stop
+2026-11-09 02:56:21,148 INFO gateway.run: Cron ticker started (interval=60s)
+2026-11-09 02:56:22,079 INFO tools.tirith_security: cosign not on PATH — installing tirith with SHA-256 verification only (install cosign for full supply chain verification)
+2026-11-09 02:56:25,646 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-11-09 02:56:26,502 INFO tools.tirith_security: tirith installed to /opt/data/bin/tirith (SHA-256 only)
+2026-11-09 03:01:16,523 INFO mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
