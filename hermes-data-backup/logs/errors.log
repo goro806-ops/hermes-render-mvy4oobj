@@ -1226,3 +1226,14 @@ sqlite3.OperationalError: database is locked
 2026-11-09 04:52:58,228 WARNING hermes_cli.web_server: Binding to 0.0.0.0 with --insecure — the dashboard has no robust authentication. Only use on trusted networks.
 2026-11-09 04:53:12,836 WARNING gateway.run: No user allowlists configured. All unauthorized users will be denied. Set GATEWAY_ALLOW_ALL_USERS=true in ~/.hermes/.env to allow open access, or configure platform allowlists (e.g., TELEGRAM_ALLOWED_USERS=your_id).
 2026-11-09 04:53:12,926 WARNING gateway.run: No messaging platforms enabled.
+2026-11-09 05:07:22,047 WARNING hermes_cli.web_server: Binding to 0.0.0.0 with --insecure — the dashboard has no robust authentication. Only use on trusted networks.
+2026-11-09 05:07:35,752 WARNING gateway.run: No user allowlists configured. All unauthorized users will be denied. Set GATEWAY_ALLOW_ALL_USERS=true in ~/.hermes/.env to allow open access, or configure platform allowlists (e.g., TELEGRAM_ALLOWED_USERS=your_id).
+2026-11-09 05:07:35,753 WARNING gateway.run: No messaging platforms enabled.
+2026-11-09 05:07:40,860 ERROR gateway.run: kanban dispatcher: tick failed on board default
+Traceback (most recent call last):
+  File "/opt/hermes/gateway/run.py", line 3878, in _tick_once_for_board
+    conn = _kb.connect(board=slug)
+  File "/opt/hermes/hermes_cli/kanban_db.py", line 920, in connect
+    conn.execute("PRAGMA journal_mode=WAL")
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
